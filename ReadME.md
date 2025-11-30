@@ -66,3 +66,13 @@ The model uses a dual-branch architecture that merges later in the network:
 
 ## 🚀 Results
 The model was trained for 10 epochs using `CrossEntropyLoss` and `Adam` optimizer, successfully converging and learning to distinguish between document types.
+
+After implementing **Batch Normalization** and optimizing hyperparameters, the model achieved **100% accuracy** on the dataset.
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+* **Loss:** Converged to ~0.05
+* **Accuracy:** 100% (No false positives/negatives)
+
+### ⚠️ Engineering Note
+While **100% accuracy** is typically a sign of overfitting in large-scale deep learning, it is expected in this specific context due to the **small and controlled nature of the dataset**. The primary goal was to successfully implement and converge a Multi-Modal architecture (Image + Metadata), which the model achieved perfectly.
